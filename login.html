@@ -5,14 +5,14 @@
     <link rel="stylesheet" href="style.css">
     <script>
         function validateform(){  
-var name=document.myform.regno.value;  
-var password=document.myform.password.value;  
+var reg=document.myform.regno.value;  
+var password=document.myform.pass.value;  
   
-if (name==null || name==""){  
-  alert("Name can't be blank");  
+if (reg==null || reg==""){  
+  alert("can't be blank");  
   return false;  
-}else if(isNaN(regno)){  
-  document.getElementById("numloc").innerHTML="Enter Numeric value only";  
+}else if(isNaN(reg)){  
+ alert("Enter Numeric Value Only"); 
   return false;  
 }
 else if(password.length<6){  
